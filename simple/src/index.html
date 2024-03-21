@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+        connect-src socket: https: http: blob: ipc: wss: ws: ws://localhost:*;
+         script-src socket: https: http: blob: http://localhost:* 'unsafe-eval' 'unsafe-inline';
+         worker-src socket: https: http: blob: 'unsafe-eval' 'unsafe-inline';
+          frame-src socket: https: http: blob: http://localhost:*;
+            img-src socket: https: http: blob: http://localhost:*;
+          child-src socket: https: http: blob:;
+         object-src 'none';
+      "
+    >
+    <style type="text/css">
+      html {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        align-content: center;
+        display: block;
+        font-family: helvetica;
+        height: 100%;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/icon-from-service-worker.png" title="This image is loaded from the service worker"/>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+        connect-src socket: https: http: blob: ipc: wss: ws: ws://localhost:*;
+         script-src socket: https: http: blob: http://localhost:* 'unsafe-eval' 'unsafe-inline';
+         worker-src socket: https: http: blob: 'unsafe-eval' 'unsafe-inline';
+          frame-src socket: https: http: blob: http://localhost:*;
+            img-src socket: https: http: blob: http://localhost:*;
+          child-src socket: https: http: blob:;
+         object-src 'none';
+      "
+    >
+    <style type="text/css">
+      html, body {
+        height: 100%;
+      }
+      iframe {
+        border: none;
+        overflow: hidden;
+        display: block;
+        height: 100%;
+        width: 100%
+      }
+      body {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        font-family: helvetica;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe src="/hello.html" frameborder="0"></iframe>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "@socketsupply/socket-service-worker-examples-simple",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Socket Runtime simple service worker example",
+  "main": "src/index.js",
+  "scripts": {
+    "test": ":"
+  },
+  "keywords": [
+    "socket",
+    "runtime",
+    "simple",
+    "service",
+    "worker",
+    "example"
+  ],
+  "author": "Joseph Werle <joseph@socketsupply.co>",
+  "license": "MIT"
+}
