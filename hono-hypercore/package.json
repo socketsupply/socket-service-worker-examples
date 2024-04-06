@@ -1,0 +1,28 @@
+{
+  "name": "@socketsupply/socket-service-worker-examples-hono-hypercore",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Socket Runtime Hono.js + Hypercore service worker example",
+  "main": "src/index.js",
+  "scripts": {
+    "test": ":"
+  },
+  "keywords": [
+    "socket",
+    "runtime",
+    "hono",
+    "hypercore",
+    "service",
+    "worker",
+    "example"
+  ],
+  "author": "Joseph Werle <joseph@socketsupply.co>",
+  "license": "MIT",
+  "dependencies": {
+    "hono": "^4.1.3",
+    "hypercore": "^10.34.1",
+    "random-access-memory": "^6.2.1",
+    "sodium-javascript": "^0.8.0"
+  }
+}
