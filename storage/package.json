@@ -1,0 +1,21 @@
+{
+  "name": "@socketsupply/socket-service-worker-examples-storage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Socket Runtime storage service worker example",
+  "main": "src/index.js",
+  "scripts": {
+    "test": ":"
+  },
+  "keywords": [
+    "socket",
+    "runtime",
+    "storage",
+    "service",
+    "worker",
+    "example"
+  ],
+  "author": "Joseph Werle <joseph@socketsupply.co>",
+  "license": "MIT"
+}
