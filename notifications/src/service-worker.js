@@ -27,7 +27,6 @@ export default async function (request, env, ctx) {
   }
 
   const notifications = await globalThis.registration.getNotifications({ tag })
-  console.log({notifications})
   const notification = notifications.find((notification) =>
     notification.tag === tag
   )
@@ -37,7 +36,6 @@ export default async function (request, env, ctx) {
   }
 
   notification.onclick = () => {
-    console.log('click')
     client.postMessage({
       notification: {
         id: notification.id,
@@ -47,7 +45,6 @@ export default async function (request, env, ctx) {
   }
 
   notification.onclose = () => {
-    console.log('close')
     client.postMessage({
       notification: {
         id: notification.id,
