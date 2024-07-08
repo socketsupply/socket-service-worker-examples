@@ -6,6 +6,9 @@ oninstall = (event) => {
   globalThis.skipWaiting()
 }
 
-onfetch = (event) => {
-  event.respondWith(fetch('/icon.png'))
+onfetch = async (event) => {
+  event.respondWith(fetch('/icon.png', {
+    method: event.request.method,
+    headers: event.request.headers
+  }))
 }
